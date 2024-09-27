@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+    cursor: pointer;
+
+}
+
+
+nav ul li {
+    margin: 0px 15px;
+    padding: 0px 10px;
+    border-left: 1px solid gray;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+
+.accueil {
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+    
+}
+
+.accueil img{
+    width: 50%;
+}
+
+.accueil h2 {
+    padding-top: 2rem;
+    padding-bottom: 10%;
+
+}
+
+header h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.banner h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.banner p {
+    font-size: 24px;
+}
+
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h3 {
+    font-size: 28px;
+    padding: 1rem;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.news {
+    padding: 50px 20px;
+}
+
+.news h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+h4 {
+    color: white;
+    margin: 1rem;
+    padding-top: 1rem;
+}
+
+.news-container article {
+    width: 20rem;
+    background-color: #282725;
+    margin: 1rem;
+}
+
+.news-container img {
+    display: block;
+    width: 100%;
+    
+}
+
+
+.news-container p {
+    font-size: 16px;
+    color: white;
+    padding: 1rem;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+.newsletter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsletter form {
+    display: inline-block;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-right: 10px;
+    width: 250px;
+}
+
+.newsletter button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.legal {
+    text-align: center;
+}
+
+.legal a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.legal a:hover {
+    text-decoration: underline;
+}
