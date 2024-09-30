@@ -1,6 +1,8 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 
 body {
@@ -26,19 +28,15 @@ nav ul {
 }
 
 
-nav ul li {
+nav ul li a{
+    color: black;
     margin: 0px 15px;
     padding: 0px 10px;
     border-left: 1px solid gray;
-}
-
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
     
 }
+
+ul li a:first-child { border-left: none; }
 
 
 .accueil {
@@ -82,7 +80,10 @@ header h2 {
 }
 
 .intro {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 50px 20px;
 }
 
@@ -92,11 +93,12 @@ header h2 {
 }
 
 .intro p {
+    text-align: center;
     font-size: 18px;
     margin-bottom: 20px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+
 }
 
 .intro button {
@@ -151,9 +153,15 @@ h4 {
 }
 
 footer {
-    background-color: black;
+    background-color: #292B2C;
     color: white;
-    padding: 40px 20px;
+    padding-top: 40px;
+
+}
+
+footer img {
+    max-width: 100px;
+
 }
 
 .newsletter {
@@ -181,17 +189,38 @@ footer {
     font-size: 16px;
     cursor: pointer;
 }
-
+.img {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.legal ul {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
 .legal {
-    text-align: center;
+    margin: 0px 15px;
+    padding: 0px 10px;
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+   
+
 }
 
 .legal a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 20px;
+       
+}
+.lien a:hover {
+    text-decoration: underline;
+    color: red;
 }
 
 .legal a:hover {
     text-decoration: underline;
+    color: rgb(255, 0, 0);
 }
