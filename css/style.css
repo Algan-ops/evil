@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../font/Roboto-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,28 +20,32 @@ header {
     color: rgb(0, 0, 0);
 }
 
-
-
-nav ul {
+.main-menu {
     display: flex;
     justify-content: center;
-    list-style: none;
-    padding: 20px 0;
-    cursor: pointer;
-
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-
-nav ul li a{
+nav ul li a {
     color: black;
-    margin: 0px 15px;
-    padding: 0px 10px;
-    border-left: 1px solid gray;
-    
+}
+.main-menu .main-menu-element {
+    list-style: none;
+    padding: 0 1.5rem;
 }
 
-ul li a:first-child { border-left: none; }
+.main-menu .main-menu-element a:hover {
+    color: #C0192A;
+}
 
+
+
+/* POUR RAJOUTER DES BORDURES SUR LE MENU */
+.main-menu .main-menu-element:not(:last-child) {
+    border-right: 1px solid black;
+}
 
 .accueil {
     background-image: url(../img/banner.jpg);
@@ -54,7 +62,7 @@ ul li a:first-child { border-left: none; }
 }
 
 .accueil img{
-    width: 50%;
+    width: 60%;
 }
 
 .accueil h2 {
@@ -101,13 +109,14 @@ header h2 {
 
 }
 
-.intro button {
+.intro a {
     padding: 10px 20px;
     background-color: red;
     color: white;
     border: none;
     font-size: 20px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .news {
@@ -123,6 +132,7 @@ header h2 {
 .news-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 
 }
 
@@ -181,13 +191,14 @@ footer img {
     width: 250px;
 }
 
-.newsletter button {
+.newsletter a {
     padding: 10px 20px;
     background-color: red;
     color: white;
     border: none;
     font-size: 16px;
     cursor: pointer;
+    border-radius: 10px;
 }
 .img {
     display: flex;
@@ -223,4 +234,40 @@ footer img {
 .legal a:hover {
     text-decoration: underline;
     color: rgb(255, 0, 0);
+}
+
+.intro a:hover {
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+
+.newsletter a:hover {
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width:963px) {
+
+.legal ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+img {
+    margin-bottom: 1rem;
+}
+
+
+
+
+    
 }
